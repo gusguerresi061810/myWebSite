@@ -4,45 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Cloud IT</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Secure Cloud IT</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#security">Security</a></li>
-            <li><a href="#collaboration">Collaboration</a></li>
-            <li><a href="#data-analytics">Data Analytics & Reporting</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to Secure Cloud IT. We specialize in Security, Collaboration, and Data Analytics & Reporting.</p>
-        </section>
-        <section id="security">
-            <h2>Security</h2>
-            <p>Ensuring the highest level of cybersecurity for your business operations.</p>
-        </section>
-        <section id="collaboration">
-            <h2>Collaboration</h2>
-            <p>Empowering teams to work together efficiently with secure and seamless tools.</p>
-        </section>
-        <section id="data-analytics">
-            <h2>Data Analytics & Reporting</h2>
-            <p>Providing insights and reporting solutions to make data-driven decisions.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Get in touch with us to learn more.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Secure Cloud IT Pty Ltd</p>
-    </footer>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <a href="index.html">
+                <img src="logo.svg" alt="Secure Cloud IT Logo" class="logo">
+            </a>
+
+            <!-- Hamburger Button -->
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#collaboration">Collaboration</a></li>
+                    <li><a href="#data-analytics">Data Analytics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section id="home">
+                <h2>Home</h2>
+                <p>Welcome to Secure Cloud IT. We specialize in Security, Collaboration, and Data Analytics & Reporting.</p>
+            </section>
+            <section id="security">
+                <h2>Security</h2>
+                <p>Ensuring the highest level of cybersecurity for your business operations.</p>
+            </section>
+            <section id="collaboration">
+                <h2>Collaboration</h2>
+                <p>Empowering teams to work together efficiently with secure and seamless tools.</p>
+            </section>
+            <section id="data-analytics">
+                <h2>Data Analytics & Reporting</h2>
+                <p>Providing insights and reporting solutions to make data-driven decisions.</p>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Get in touch with us to learn more.</p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Secure Cloud IT</p>
+        </footer>
+    </div>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        // Toggle mobile menu
+        menuToggle.addEventListener("click", function () {
+            nav.classList.toggle("open");
+        });
+
+        // Close menu when clicking a nav link & scroll smoothly
+        navLinks.forEach(link => {
+            link.addEventListener("click", function (event) {
+                nav.classList.remove("open"); // Hide menu
+            });
+        });
+    });
+</script>
+
+
 </body>
 </html>
+
