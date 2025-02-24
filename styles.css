@@ -118,21 +118,21 @@ footer {
     nav {
         display: flex;
         flex-direction: column;
-        position: fixed; /* Fixed so it stays on screen */
+        position: fixed; /* Ensures it stays visible when scrolling */
         top: 0;
-        left: -250px; /* Start off-screen */
+        left: -250px; /* Start completely off-screen */
         width: 250px;
         height: 100vh;
         background: black;
         text-align: center;
         padding-top: 60px;
-        transition: transform 0.3s ease-in-out;
+        transition: left 0.3s ease-in-out; /* Smooth slide-in animation */
         z-index: 1000;
     }
 
-    /* When menu is open, slide it in */
+    /* When menu is open, slide it in properly */
     nav.open {
-        transform: translateX(250px);
+        left: 0; /* Moves it to the correct position */
     }
 
     /* Stack menu items */
