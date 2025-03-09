@@ -149,7 +149,7 @@ footer {
 }
 
 /* 🔹 MOBILE STYLES */
-@media (max-width: 768px) {
+@media (max-width: 930px) {
     /* Show the hamburger menu */
     .menu-toggle {
         display: block;
