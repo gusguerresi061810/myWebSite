@@ -97,10 +97,10 @@ footer {
     width: auto;
 }
 
-/* Make "Contact" nav item look like a button */
-nav ul li:first-child a {
-    background: #ffcc00; /* Bright color for visibility */
-    color: black; /* Dark text for contrast */
+/* Style the "Let’s Talk" button */
+.cta-button {
+    background: #ffcc00; /* Modern attention-grabbing color */
+    color: black; /* Strong contrast for readability */
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
@@ -108,11 +108,12 @@ nav ul li:first-child a {
 }
 
 /* Hover Effect */
-nav ul li:first-child a:hover {
+.cta-button:hover {
     background: white;
     color: black;
     box-shadow: 0px 4px 8px rgba(255, 204, 0, 0.5);
 }
+
 
 
 /* Default: Hide hamburger button on large screens */
